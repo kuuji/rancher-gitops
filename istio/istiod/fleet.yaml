@@ -35,10 +35,11 @@ diff:
     name: istiod-default-validator
     operations:
     - {"op": "remove", "path":"/webhooks/0/clientConfig/caBundle"}
-    - {"op": "remove", "path":"/webhooks/0/0"}
-    - {"op": "remove", "path":"/webhooks/0/1"}
+    - {"op": "remove", "path":"/webhooks/0/admissionReviewVersions"}
+    - {"op": "remove", "path":"/webhooks/0/admissionReviewVersions/0"}
+    - {"op": "remove", "path":"/webhooks/0/admissionReviewVersions/1"}
     - {"op": "remove", "path":"/webhooks/0/clientConfig/service"}
-    - {"op": "remove", "path":"/webhooks/0/rules"}
-    - {"op": "CREATE", "path":"/webhooks"}
-    - {"op": "UPDATE", "path":"/webhooks"}
-    - {"op": "remove", "path":"/webhooks"}
+    - {"op": "remove", "path":"/webhooks/0/failurePolicy"}
+    - {"op": "remove", "path":"/webhooks/0/matchPolicy"}
+    - {"op": "remove", "path":"/webhooks/0/name"}
+
