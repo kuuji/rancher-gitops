@@ -37,4 +37,5 @@ diff:
     - {"op": "remove", "path":"/webhooks/0/clientConfig/caBundle"}
     - {"op": "remove", "path":"/webhooks/0/0"}
     - {"op": "remove", "path":"/webhooks/0/1"}
-    - {"op": "remove", "path":"/webhooks"}
+    - {"op": "remove", "path":"/webhooks/0/clientConfig/service"}
+    - {"op": "remove", "path":"/webhooks/0/rules"}
