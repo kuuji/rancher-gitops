@@ -39,5 +39,6 @@ diff:
     - {"op": "remove", "path":"/webhooks/0/1"}
     - {"op": "remove", "path":"/webhooks/0/clientConfig/service"}
     - {"op": "remove", "path":"/webhooks/0/rules"}
-    - {"op": "create", "path":"/webhooks"}
-    - {"op": "update", "path":"/webhooks"}
+    - {"op": "CREATE", "path":"/webhooks"}
+    - {"op": "UPDATE", "path":"/webhooks"}
+    - {"op": "remove", "path":"/webhooks"}
