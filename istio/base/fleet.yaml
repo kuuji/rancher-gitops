@@ -33,4 +33,5 @@ diff:
   - apiVersion: admissionregistration.k8s.io/v1
     kind: ValidatingWebhookConfiguration
     name: istiod-default-validator
-    
+    operations:
+    - {"op": "remove", "path":"/webhooks"}
