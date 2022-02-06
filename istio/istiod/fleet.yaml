@@ -29,8 +29,8 @@ helm:
   # Custom values that will be passed as values.yaml to the installation
   values:
 diff:
-comparePatches: 
-- apiVersion: admissionregistration.k8s.io/v1
-  kind: ValidatingWebhookConfiguration
-  operations:
-  - {"op":"remove", "path":"/webhooks"}
+  comparePatches: 
+  - apiVersion: admissionregistration.k8s.io/v1
+    kind: ValidatingWebhookConfiguration
+    operations:
+    - {"op":"remove", "path":"/webhooks"}
