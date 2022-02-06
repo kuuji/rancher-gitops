@@ -17,7 +17,7 @@ helm:
   repo: "https://istio-release.storage.googleapis.com/charts"
 
   # Used if repo is set to look up the version of the chart
-  version: 1.12.1
+  version: 1.12.2
 
   # Force recreate resource that can not be updated
   force: false
@@ -26,6 +26,4 @@ helm:
   # is less that or equal to zero, we will not wait in Helm
   timeoutSeconds: 0
 
-  # Custom values that will be passed as values.yaml to the installation
-  values:
-    name: "istio-ingress"
+
