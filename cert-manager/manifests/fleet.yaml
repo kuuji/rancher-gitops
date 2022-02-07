@@ -1,4 +1,4 @@
-namespace: fleet-mc-kustomize-example
+namespace: istio-ingress
 targetCustomizations:
 - name: rancher-desktop
   clusterSelector:
