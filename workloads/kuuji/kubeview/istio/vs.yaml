@@ -1,0 +1,29 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: kubeview
+  namespace: kuuji
+spec:
+  hosts:
+  - kubeview.byeon.ca
+  gateways:
+  - istio-ingress/pub-lb
+  http:
+  - name: "kubeview"
+    route:
+    - destination:
+        port:
+          number: 80
+        host: kubeview.kuuji.svc.cluster.local
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: kubeview
+  namespace: kuuji
+spec:
+  host: kubeview.kuuji.svc.cluster.local
+  trafficPolicy:
+    loadBalancer:
+      simple: LEAST_CONN
