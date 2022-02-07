@@ -1,0 +1,8 @@
+namespace: fleet-mc-kustomize-example
+targetCustomizations:
+- name: rancher-desktop
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: rancher-desktop
+  kustomize:
+    dir: overlays/rancher-desktop

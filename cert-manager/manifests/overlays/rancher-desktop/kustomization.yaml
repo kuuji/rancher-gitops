@@ -1,0 +1,4 @@
+resources:
+- ../../base
+patches:
+- clouddns-dns01-solver-svc-acct-sealed-secret.yaml
